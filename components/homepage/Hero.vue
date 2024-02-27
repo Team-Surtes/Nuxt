@@ -10,10 +10,10 @@
           <h1>We are Team SURTES</h1>
           <div id="powertrain-pills" class="grid grid-cols-2 w-1/2 mx-auto gap-4 py-8 min-w-80">
             <div id="electric-powertrain" class="glass hover:bg-surtes-950 rounded-full border-2 border-white h-12 min-w-20">
-                <button class="w-full h-full ">Electric</button>
+                <button class="w-full h-full" data-to="/electric">Electric</button>
             </div>
             <div id="combustion-powertrain" class="glass hover:bg-surtes-950 rounded-full border-2 border-white h-12 min-w-20">
-                <button class="w-full h-full">Combustion</button>
+                <button class="w-full h-full" data-to="/combustion">Combustion</button>
             </div>
           </div>
         </div>
@@ -30,6 +30,22 @@
 </style>
 
 <script setup lang="ts">
+const { $gsap } = useNuxtApp();
+
+onMounted(() => {
+  $gsap.to(`#powertrain-pills > div`, {
+    duration: 1,
+    width: '100%',
+    height: '100%',
+    ease: 'power1.out',
+    onComplete: () => {
+      window.location.href = url;
+    }
+  })
+})
+
+
+
 // import { gsap } from "gsap";
 
 // const electricButton = document.getElementById('electric-powertrain');
@@ -38,14 +54,7 @@
 
 // const expandAnimation = (element: HTMLElement, url: string) => {
 //   gsap.to(element, {
-//     duration: 1,
-//     width: '100%',
-//     height: '100%',
-//     ease: 'power1.out',
-//     onComplete: () => {
-
-//       window.location.href = url;
-//     }
+    
 
 //   });
 // };
