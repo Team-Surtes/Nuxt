@@ -51,7 +51,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 let drawerIsOpen = ref(false);
 let headerBackgroundColor = ref('rgba( 69, 12, 10, 0.75 )');
 const handleScroll = () => {
-  // Clac scroll pct
+  // Calc scroll pct
   const scrollPercentage = (window.scrollY / window.innerHeight) * 100;
 
   // Determine what colour to show
