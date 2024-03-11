@@ -24,7 +24,7 @@
         class="mb-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 md:gap-8 py-4 items-center"
       >
         <div class="lg:col-span-2 sm:col-auto md:col-auto xl:col-span-2">
-          <NuxtImg src="/img/Team 2016 2.jpg" class="rounded-lg w-11/12" />
+          <NuxtImg src="/img/Team-2016-2.jpg" class="rounded-lg w-11/12" />
         </div>
         <div
           class="flex flex-col w-full lg:col-span-2 xl:col-span-2"
@@ -53,7 +53,7 @@
           </div>
         </div>
         <div class="lg:col-span-2 sm:col-auto md:col-auto xl:col-span-2 max-md:order-first">
-          <NuxtImg src="/img/Car 2019 Running.jpg" class="rounded-lg w-11/12" />
+          <NuxtImg src="/img/Car-2019-Running.jpg" class="rounded-lg w-11/12" />
         </div>
       </div>
       <!-- <CarModel /> -->
