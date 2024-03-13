@@ -1,0 +1,1 @@
+import{l as o,c,g as e,e as a,a6 as r,b as _,ab as i,ac as d}from"./entry.ec83c4e2.js";const l={},m={class:"bg-background text-text-200 min-h-screen font-onest"},f={class:"min-h-screen pt-24 bg-surtes-950"};function p(t,u){const s=i,n=d;return _(),c("div",m,[e(s),a("main",f,[r(t.$slots,"default")]),e(n)])}const g=o(l,[["render",p]]);export{g as default};
